@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(90deg,rgba(12, 12, 148, 1) 0%, rgba(39, 39, 71, 1) 49%, rgba(83, 97, 207, 1) 100%);
+    color: #fff;
+}
 .motivacion{
     display: inline;
     line-height: 1.5;
@@ -11,12 +15,16 @@
     background-color: #8766F2;
 }
 .formulario{
+    background-color: #94940C;
     position: absolute;
     top: 20%;
-    left: calc(100%-500px);
+    left: calc(60%-100px);
     width: 400px;
-    padding: 10px 20px;
-    box-shadow: 6px 6px 12px rgba(0,0,0,0.5);
+    padding: 20px 20px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     border: 2px solid rgb(65, 64, 64);
+}
+.registrar{
+    width: 100%;
 }   
