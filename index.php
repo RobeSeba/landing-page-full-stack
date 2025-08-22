@@ -69,20 +69,20 @@
         </div>
         <!-- formulario -->
         <div class="col-6">
-          <form class="formulario" action="">
+          <form class="formulario" action="php/formulario.php" method="get">
             <div class="mb-3">
-              <label for="NombreControl" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="NombreControl" placeholder="Ingrese su Nombre">
+              <label for="NombreInput" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="NombreInput" name="NombreInput" placeholder="Ingrese su Nombre">
             </div>
             <div class="mb-3">
-              <label for="NombreControl" class="form-label">Correo Electronico</label>
-              <input type="email" class="form-control" id="NombreControl" placeholder="Ingrese su Correo" required>
+              <label for="EmailInput" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="EmailInput" name="EmailInput" placeholder="Ingrese su Correo" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Agrega un Comentario</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="button" class="btn btn-primary registrar">Enviar</button>
+            <button type="submit" class="btn btn-primary registrar">Enviar</button>
           </form>
         </div>
       </div>
