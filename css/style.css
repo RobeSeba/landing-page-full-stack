@@ -4,26 +4,57 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(90deg,rgba(12, 12, 148, 1) 0%, rgba(39, 39, 71, 1) 49%, rgba(83, 97, 207, 1) 100%);
+    background: linear-gradient(90deg, #232526 0%, #0f2027 100%);
     color: #fff;
 }
-.motivacion{
-    display: inline;
-    line-height: 1.5;
-    color: #fff;
-    padding: 5px 8px;
-    background-color: #8766F2;
+
+/* Formulario moderno y alineado */
+.formulario {
+    background: linear-gradient(135deg, #232526 0%, #0f2027 100%);
+    color: #00e6e6;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 32px 28px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+    border-radius: 18px;
+    border: 1.5px solid #00e6e6;
+    position: static;
 }
-.formulario{
-    background-color: #94940C;
-    position: absolute;
-    top: 20%;
-    left: calc(60% - 50px);
-    width: 400px;
-    padding: 20px 20px;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    border: 2px solid rgb(65, 64, 64);
+
+.formulario label {
+    color: #00e6e6;
+    font-weight: 500;
+}
+
+.formulario .form-control {
+    background: #181c20;
+    color: #00e6e6;
+    border: 1.5px solid #00e6e6;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.formulario .form-control:focus {
+    box-shadow: 0 0 0 2px #00e6e633;
+    border-color: #00e6e6;
+}
+
+.formulario .registrar {
+    background: linear-gradient(90deg, #00e6e6 0%, #0072ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 0;
+    box-shadow: 0 4px 16px rgba(0, 230, 230, 0.15);
+    transition: background 0.3s;
+}
+.formulario .registrar:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00e6e6 100%);
+    color: #fff;
 }
 .registrar{
     width: 100%;
