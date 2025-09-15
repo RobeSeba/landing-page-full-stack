@@ -69,7 +69,7 @@
             <div class="card border-0 shadow-lg rounded-4 p-0 h-100" id="formulario" style="background: linear-gradient(135deg, #232526 0%, #0f2027 100%); color: #fff; display: flex; flex-direction: column; justify-content: center;">
               <div class="p-5">
                 <h2 class="fw-bold mb-4 text-center" style="color: #00e6e6;">Regístrate al Bootcamp</h2>
-                <form class="formulario" id="formulario-bootcamp" action="">
+                <form class="formulario" id="formulario-bootcamp" action="php/formulario.php">
                   <div class="mb-3">
                     <label for="nombreControl" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombreControl" placeholder="Ingrese su Nombre" name="NombreInput" style="background: #181c20; color: #00e6e6; border: 1px solid #00e6e6;" required>
@@ -119,7 +119,9 @@
   <!-- scripts de añimachion-->
   <script src="js/animations.js"></script>
   <script src="js/interactions.js"></script>
-  <script src="js/form-validation.js"></script>
+
+  <!-- falta controlar el envio del formulario ya que si descomentas el escrip de validacion entonces no envia los datos a formulario.php -->
+  <!-- <script src="js/form-validation.js"></script> -->
   <script src="js/navigation.js"></script>
 </body>
 
