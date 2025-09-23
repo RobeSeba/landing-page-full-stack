@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-09-2025 a las 05:02:45
+-- Tiempo de generación: 23-09-2025 a las 05:56:10
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -24,48 +24,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `registros`
+-- Estructura de tabla para la tabla `leads`
 --
 
-CREATE TABLE `registros` (
-  `id_registro` int(11) NOT NULL,
+CREATE TABLE `leads` (
+  `id` int(11) NOT NULL,
   `nombre` varchar(150) NOT NULL,
   `correo` varchar(150) NOT NULL,
-  `comentario` text NOT NULL
+  `telefono` varchar(11) NOT NULL,
+  `comentario` text NOT NULL,
+  `fecha_registro` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `registros`
+-- Volcado de datos para la tabla `leads`
 --
 
-INSERT INTO `registros` (`id_registro`, `nombre`, `correo`, `comentario`) VALUES
-(1, 'Roberto', 'roberto_m_ll@hotmail.com', 'Quiero aprender a programar'),
-(2, 'Roberto', 'roberto_m_ll@hotmail.com', 'Quiero aprender a programar'),
-(3, 'Roberto', 'roberto_m_ll@hotmail.com', 'Quiero aprender a programar'),
-(4, 'Javier', 'javier@gmail.com', 'Estoy interesado'),
-(5, 'Javier', 'javier@gmail.com', 'Estoy interesado'),
-(6, 'Sebastiana', 'sebas@gmail.com', 'me interesa'),
-(7, 'Jair', 'jair@gamil.com', 'escribeme al 987654321');
+INSERT INTO `leads` (`id`, `nombre`, `correo`, `telefono`, `comentario`, `fecha_registro`) VALUES
+(1, 'Roberto', 'roberto_m_ll@hotmail.com', '974248490', 'escribeme un comentario', '2025-09-22'),
+(2, 'Roberto', 'roberto_m_ll@hotmail.com', '974248490', 'Escribeme', '2025-09-22');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `registros`
+-- Indices de la tabla `leads`
 --
-ALTER TABLE `registros`
-  ADD PRIMARY KEY (`id_registro`);
+ALTER TABLE `leads`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `registros`
+-- AUTO_INCREMENT de la tabla `leads`
 --
-ALTER TABLE `registros`
-  MODIFY `id_registro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+ALTER TABLE `leads`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
