@@ -10,12 +10,12 @@
         }
 
 
-        public function Insertar($nombre,$correo,$comentario){
-            $stmt = $this->conexion->prepare("INSERT INTO registros (nombre, correo, comentario) VALUES (?, ?, ?)");
+        public function Insertar($nombre,$correo,$telefono,$comentario){
+            $stmt = $this->conexion->prepare("INSERT INTO leads (nombre, correo,telefono,comentario,fecha_registro) VALUES (?, ?, ?,?,CURDATE())");
             if (!$stmt) {
                 throw new Exception("Error al preparar la consulta: " . $this->conexion->error);
             }
-            $stmt->bind_param("sss", $nombre, $correo, $comentario);
+            $stmt->bind_param("ssss", $nombre, $correo,$telefono,$comentario);
             $stmt->execute();
             $stmt->close();
             $this->conexion->close();
