@@ -91,6 +91,7 @@ body{
 .btn:hover::before {
     width: 300px;
     height: 300px;
+    
 }
 
 .btn:hover {
@@ -372,4 +373,6 @@ body{
         transform: translate(-50%);
         opacity: 1;
     }
+    
+    
 }
