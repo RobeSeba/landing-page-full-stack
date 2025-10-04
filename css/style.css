@@ -324,3 +324,52 @@ body{
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
     50% { transform: translate(-20px, -20px) rotate(180deg); }
 }   
+
+/* banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner p{
+    margin: 0;
+    transition: color 0.5s ease;
+    color: white;
+    cursor: pointer;
+    animation: slidein 3s ;
+
+    position: absolute;
+    /* La animación se aplicará a esta clase */
+    animation: slide-to-center 3s ease-out forwards; /* 'forwards' mantiene el estado final */
+    
+    /* Configuración inicial fuera de la vista a la izquierda */
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.banner p:hover{
+    color: rgb(245, 181, 63);
+}
+
+
+@keyframes slide-to-center {
+   0% {
+        /* Estado inicial: Fuera de la pantalla a la izquierda */
+        transform: translateX(-100%);
+        opacity: 0; /* Empieza invisible para una aparición más suave */
+    }
+
+    50% {
+        /* Un punto intermedio para la suavidad */
+        opacity: 1;
+    }
+
+    100% {
+        /* Estado final: Centrado */
+        /* Lo centramos moviéndolo a la mitad del contenedor y luego hacia atrás por la mitad de su propio ancho */
+        left: 50%;
+        transform: translate(-50%);
+        opacity: 1;
+    }
+}
