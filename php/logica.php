@@ -71,5 +71,21 @@
             return ["success" => true, "token" => $jwt];
                     
           }
+
+        public function Listar(){
+            $stmt = $this->conexion->prepare("SELECT id, nombre, correo, telefono, comentario, fecha_registro FROM leads");
+            if(!$stmt){
+                throw new Exception("Error al preparar la consulta: " . $this->conexion->error);
+            }
+            $stmt->execute();
+            $resultado = $stmt->get_result();
+            $leads = [];
+            while($row = $resultado->fetch_assoc()){
+                $leads[] = $row;
+            }
+            $stmt->close();
+            $this->conexion->close();
+            return $leads;
     }
+}
 ?>

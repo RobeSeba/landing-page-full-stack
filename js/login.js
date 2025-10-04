@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // =========================
     
     function handleFormSubmit(e) {
-        e.preventDefault();
+        // e.preventDefault();
         
         const isEmailValid = validateField(emailInput, 'email', validationConfig.email, 
             emailInput.parentNode.querySelector('.validation-feedback'), true);

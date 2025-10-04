@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // =========================
     
     function handleFormSubmit(e) {
-        e.preventDefault();
+        // e.preventDefault();
         
         const isValid = validateForm();
         const submitButton = document.querySelector('.registrar');
