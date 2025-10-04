@@ -17,7 +17,5 @@
             echo $respuesta["message"];
         }
        //echo json_encode($token);
-
-
     }
 ?>
