@@ -1,8 +1,8 @@
 <?php
 class ConexionBD {
-    private $host = 'localhost';
-    private $usuario = 'root';
-    private $clave = '';
+    private $host = '3.148.109.3';
+    private $usuario = 'AdminConsul';
+    private $clave = 'admin123';
     private $base_datos = 'landingBD';
     private $puerto=3306;
     private $conexion;
