@@ -39,7 +39,6 @@
     <table border="1" cellpadding="8" cellspacing="0">
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Nombre</th>
                 <th>Correo</th>
                 <th>Teléfono</th>
@@ -50,7 +49,6 @@
         <tbody>
             <?php foreach ($datos as $lead): ?>
             <tr>
-                <td><?php echo htmlspecialchars($lead['id']); ?></td>
                 <td><?php echo htmlspecialchars($lead['nombre']); ?></td>
                 <td><?php echo htmlspecialchars($lead['correo']); ?></td>
                 <td><?php echo htmlspecialchars($lead['telefono']); ?></td>
