@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Curso de Desarrollo</title>
+  <!-- mis estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid p-5 banner">
+      
+          <a href="#formulario" class="btn btn-warning btn-lg shadow"><strong>&#129415; &#129415; &#129415; DESCUENTO POR HALLOWEEN : -30% EN EL CURSO &#129415; &#129415; &#129415;</strong></a>
+
+    </div>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3" style="background: linear-gradient(90deg, #232526 0%, #414345 100%);">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 d-flex align-items-center" href="#">
+          <i class="bi bi-lightning-charge-fill me-2 text-warning"></i> DevWeb Bootcamp
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contenido">Contenido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formulario">Formulario</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div class="hero-section text-white text-center py-5" id="inicio" style="background: linear-gradient(90deg, #232526 0%, #0f2027 100%);">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3" data-typing="80">Bootcamp Desarrollo Web FullStack</h1>
+        <p class="lead mb-4">De cero a experto: domina Frontend y Backend con proyectos reales y certificaciones.</p>
+  <a href="#formulario" class="btn btn-warning btn-lg shadow">¡Inscríbete ahora!</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="py-5" id="contenido" style="background: #181c20;">
+      <div class="container">
+        <div class="row justify-content-center align-items-stretch g-5">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="card border-0 shadow-lg rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #232526 0%, #0f2027 100%); color: #00e6e6;">
+              <h2 class="fw-bold mb-3" style="color: #00e6e6;">¿Por qué elegir nuestro Bootcamp?</h2>
+              <div class="accordion accordion-flush" id="bootcampAccordion">
+                <!-- Item 1 -->
+                <div class="accordion-item mb-2" style="background: transparent; border: 1px solid #00e6e6; border-radius: 8px;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1" style="background: #181c20; color: #00e6e6; border-radius: 8px;">
+                      <i class="bi bi-check-circle-fill me-2" style="color:#00e6e6;"></i> Proyectos reales desde el primer día
+                    </button>
+                  </h2>
+                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#bootcampAccordion">
+                    <div class="accordion-body" style="background: #0f2027; color: #fff; border-radius: 0 0 8px 8px;">
+                      ¡Olvidate de los tipicos proyectos de practica! Trabajarás en proyectos del mundo real desde tu primera semana. Aprenderás construyendo aplicaciones completas como e-commerce, dashboards administrativos y APIs REST, desarrollando un portafolio profesional que hará que marques la diferencia en el mercado laboral.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item mb-2" style="background: transparent; border: 1px solid #00e6e6; border-radius: 8px;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="background: #181c20; color: #00e6e6; border-radius: 8px;">
+                      <i class="bi bi-check-circle-fill me-2" style="color:#00e6e6;"></i> Certificaciones por cada etapa
+                    </button>
+                  </h2>
+                  <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#bootcampAccordion">
+                    <div class="accordion-body" style="background: #0f2027; color: #fff; border-radius: 0 0 8px 8px;">
+                      Obtén certificaciones al completar cada módulo del bootcamp. Estas credenciales validan tus habilidades en Frontend, Backend y DevOps, aumentando significativamente tu empleabilidad en el mercado laboral.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item mb-2" style="background: transparent; border: 1px solid #00e6e6; border-radius: 8px;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="background: #181c20; color: #00e6e6; border-radius: 8px;">
+                      <i class="bi bi-check-circle-fill me-2" style="color:#00e6e6;"></i> Mentores expertos y comunidad activa
+                    </button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#bootcampAccordion">
+                    <div class="accordion-body" style="background: #0f2027; color: #fff; border-radius: 0 0 8px 8px;">
+                      Contarás con el apoyo de desarrolladores senior con años de experiencia como el Mg. Kevin Salazar. Además, formarás parte de una comunidad activa de estudiantes y mentores donde podrás estar en constante comunicación, formar contactos, resolver dudas 24/7 y colaborar en proyectos.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item mb-2" style="background: transparent; border: 1px solid #00e6e6; border-radius: 8px;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" style="background: #181c20; color: #00e6e6; border-radius: 8px;">
+                      <i class="bi bi-check-circle-fill me-2" style="color:#00e6e6;"></i> Frontend: HTML, CSS, JS, React
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#bootcampAccordion">
+                    <div class="accordion-body" style="background: #0f2027; color: #fff; border-radius: 0 0 8px 8px;">
+                      Domina las tecnologías esenciales del Frontend: desde los fundamentos de HTML CSS y JavaScript, hasta frameworks como React. Aprenderás las mejores prácticas de UI/UX y a implementar diseños responsivos.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item mb-2" style="background: transparent; border: 1px solid #00e6e6; border-radius: 8px;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" style="background: #181c20; color: #00e6e6; border-radius: 8px;">
+                      <i class="bi bi-check-circle-fill me-2" style="color:#00e6e6;"></i> Backend: Node.js, Express, Next.js
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#bootcampAccordion">
+                    <div class="accordion-body" style="background: #0f2027; color: #fff; border-radius: 0 0 8px 8px;">
+                      Aprende a construir servidores robustos y escalables con Node.js y Express. Implementa autenticación, manejo de bases de datos (SQL y NoSQL), APIs RESTful y GraphQL. 
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="accordion-item mb-2" style="background: transparent; border: 1px solid #00e6e6; border-radius: 8px;">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" style="background: #181c20; color: #00e6e6; border-radius: 8px;">
+                      <i class="bi bi-check-circle-fill me-2" style="color:#00e6e6;"></i> DevOps: CI/CD, Docker, Cloud
+                    </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#bootcampAccordion">
+                    <div class="accordion-body" style="background: #0f2027; color: #fff; border-radius: 0 0 8px 8px;">
+                      Aprende las prácticas de DevOps que usan las empresas líderes: automatiza despliegues con CI/CD, conteneriza aplicaciones con Docker, y despliega en plataformas cloud como AWS, Azure o Vercel. Domina Git, testing automatizado y monitoreo.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="fs-5 mt-4">¡Conviértete en un desarrollador web full stack estés donde estés!</p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="card border-0 shadow-lg rounded-4 p-0 h-100" id="formulario" style="background: linear-gradient(135deg, #232526 0%, #0f2027 100%); color: #fff; display: flex; flex-direction: column; justify-content: center;">
+              <div class="p-5">
+                <h2 class="fw-bold mb-4 text-center" style="color: #00e6e6;">Regístrate al Bootcamp</h2>
+                <form class="formulario" id="formulario-bootcamp" action="php/formulario.php">
+                  <div class="mb-3">
+                    <label for="nombreControl" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreControl" placeholder="Ingrese su Nombre" name="NombreInput" style="background: #181c20; color: #00e6e6; border: 1px solid #00e6e6;" required>
+                    <div class="feedback-message" id="nombre-feedback"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="emailControl" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="emailControl" placeholder="Ingrese su Correo" name="EmailInput" required style="background: #181c20; color: #00e6e6; border: 1px solid #00e6e6;">
+                    <div class="feedback-message" id="email-feedback"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="phoneControl" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="phoneControl" placeholder="Ingrese su numero" name="PhoneInput" required style="background: #181c20; color: #00e6e6; border: 1px solid #00e6e6;">
+                    <div class="feedback-message" id="email-feedback"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="comentarioControl" class="form-label">Agrega un Comentario</label>
+                    <textarea class="form-control" id="comentarioControl" rows="3" placeholder="Cuéntanos por qué quieres unirte..." name="ComentarioInput" style="background: #181c20; color: #00e6e6; border: 1px solid #00e6e6;"></textarea>
+                    <div class="feedback-message" id="comentario-feedback"></div>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-info btn-lg registrar" style="background: linear-gradient(90deg, #00e6e6 0%, #0072ff 100%); border:none; color:#fff;">
+                      <span class="btn-text">Enviar</span>
+                      <span class="btn-loading" style="display: none;">
+                        <i class="bi bi-arrow-clockwise"></i> Enviando...
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  <footer class="py-4 mt-5" style="background: linear-gradient(90deg, #232526 0%, #414345 100%); color: #fff;">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 Bootcamp Desarrollo Web FullStack</p>
+
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  
+  <!-- scripts de añimachion-->
+  <script src="js/animations.js"></script>
+  <script src="js/interactions.js"></script>
+
+  <!-- falta controlar el envio del formulario ya que si descomentas el escrip de validacion entonces no envia los datos a formulario.php -->
+  <script src="js/form-validation.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+
+</html>
