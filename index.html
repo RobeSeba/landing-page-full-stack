@@ -40,6 +40,9 @@
               <a class="nav-link" href="#contenido">Contenido</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#planes">Planes</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#formulario">Formulario</a>
             </li>
           </ul>
@@ -148,8 +151,6 @@
                 </div>
               </div>
               <p class="fs-5 mt-4">¡Conviértete en un desarrollador web full stack estés donde estés!</p>
-=======
-              
             </div>
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -193,8 +194,341 @@
         </div>
       </div>
     </section>
+
+    <!-- Sección de Planes y Precios -->
+    <section class="py-5" id="planes" style="background: linear-gradient(135deg, #0f2027 0%, #181c20 100%);">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-3" style="color: #00e6e6;">Planes y Precios</h2>
+          <p class="lead text-white-50">Elige el plan que mejor se adapte a tus necesidades y objetivos</p>
+        </div>
+        
+        <!-- Carrusel para móviles -->
+        <div id="pricingCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#pricingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Plan Básico"></button>
+            <button type="button" data-bs-target="#pricingCarousel" data-bs-slide-to="1" aria-label="Plan Profesional"></button>
+            <button type="button" data-bs-target="#pricingCarousel" data-bs-slide-to="2" aria-label="Plan Premium"></button>
+          </div>
+          
+          <div class="carousel-inner pb-5">
+            <!-- Plan Básico - Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center px-3">
+                <div class="card border-0 shadow-lg rounded-4 pricing-card" style="background: linear-gradient(135deg, #232526 0%, #0f2027 100%); transition: transform 0.3s ease; width: 100%; max-width: 400px;">
+                  <div class="card-body p-4 d-flex flex-column">
+                    <div class="text-center mb-4">
+                      <i class="bi bi-code-slash fs-1 mb-3" style="color: #00e6e6;"></i>
+                      <h3 class="fw-bold" style="color: #00e6e6;">Plan Básico</h3>
+                      <div class="pricing-amount my-3">
+                        <span class="fs-1 fw-bold text-white">S/ 49.90</span>
+                        <span class="text-white-50">/mes</span>
+                      </div>
+                    </div>
+                    
+                    <ul class="list-unstyled mb-4 flex-grow-1">
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Acceso a módulos Frontend
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        3 proyectos guiados
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Comunidad de estudiantes
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Certificado de Frontend
+                      </li>
+                      <li class="mb-3 text-white-50">
+                        <i class="bi bi-x-circle-fill me-2"></i>
+                        Mentoría personalizada
+                      </li>
+                      <li class="mb-3 text-white-50">
+                        <i class="bi bi-x-circle-fill me-2"></i>
+                        Acceso de por vida
+                      </li>
+                    </ul>
+                    
+                    <a href="#formulario" class="btn btn-outline-info btn-lg w-100" style="border-color: #00e6e6; color: #00e6e6;">
+                      Comenzar ahora
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan Profesional - Slide 2 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center px-3">
+                <div class="card border-0 shadow-lg rounded-4 pricing-card position-relative" style="background: linear-gradient(135deg, #00e6e6 0%, #0072ff 100%); transition: transform 0.3s ease; width: 100%; max-width: 400px;">
+                  <div class="position-absolute top-0 start-50 translate-middle">
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6">Más Popular</span>
+                  </div>
+                  <div class="card-body p-4 d-flex flex-column">
+                    <div class="text-center mb-4 mt-3">
+                      <i class="bi bi-star-fill fs-1 mb-3 text-dark"></i>
+                      <h3 class="fw-bold text-dark">Plan Profesional</h3>
+                      <div class="pricing-amount my-3">
+                        <span class="fs-1 fw-bold text-dark">S/ 89.90</span>
+                        <span class="text-dark opacity-75">/mes</span>
+                      </div>
+                    </div>
+                    
+                    <ul class="list-unstyled mb-4 flex-grow-1">
+                      <li class="mb-3 text-dark">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Acceso Full Stack completo
+                      </li>
+                      <li class="mb-3 text-dark">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        8 proyectos reales
+                      </li>
+                      <li class="mb-3 text-dark">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Mentoría personalizada
+                      </li>
+                      <li class="mb-3 text-dark">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Certificados Frontend & Backend
+                      </li>
+                      <li class="mb-3 text-dark">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Sesiones 1 a 1 mensuales
+                      </li>
+                      <li class="mb-3 text-dark">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Acceso de por vida
+                      </li>
+                    </ul>
+                    
+                    <a href="#formulario" class="btn btn-dark btn-lg w-100">
+                      ¡Inscríbete ahora!
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan Premium - Slide 3 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center px-3">
+                <div class="card border-0 shadow-lg rounded-4 pricing-card" style="background: linear-gradient(135deg, #232526 0%, #0f2027 100%); transition: transform 0.3s ease; width: 100%; max-width: 400px;">
+                  <div class="card-body p-4 d-flex flex-column">
+                    <div class="text-center mb-4">
+                      <i class="bi bi-rocket-takeoff-fill fs-1 mb-3" style="color: #00e6e6;"></i>
+                      <h3 class="fw-bold" style="color: #00e6e6;">Plan Premium</h3>
+                      <div class="pricing-amount my-3">
+                        <span class="fs-1 fw-bold text-white">S/ 129.90</span>
+                        <span class="text-white-50">/mes</span>
+                      </div>
+                    </div>
+                    
+                    <ul class="list-unstyled mb-4 flex-grow-1">
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Todo del Plan Profesional
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        12+ proyectos avanzados
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Módulo DevOps completo
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Certificación DevOps
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Mentorías ilimitadas
+                      </li>
+                      <li class="mb-3 text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                        Ayuda en búsqueda laboral
+                      </li>
+                    </ul>
+                    
+                    <a href="#formulario" class="btn btn-info btn-lg w-100" style="background: linear-gradient(90deg, #00e6e6 0%, #0072ff 100%); border: none;">
+                      Impulsa tu carrera
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#pricingCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#pricingCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <!-- Grid para tablets y escritorio -->
+        <div class="row g-4 justify-content-center d-none d-md-flex">
+          <!-- Plan Básico -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-lg rounded-4 pricing-card" style="background: linear-gradient(135deg, #232526 0%, #0f2027 100%); transition: transform 0.3s ease;">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="text-center mb-4">
+                  <i class="bi bi-code-slash fs-1 mb-3" style="color: #00e6e6;"></i>
+                  <h3 class="fw-bold" style="color: #00e6e6;">Plan Básico</h3>
+                  <div class="pricing-amount my-3">
+                    <span class="fs-1 fw-bold text-white">S/ 499</span>
+                    <span class="text-white-50">/mes</span>
+                  </div>
+                </div>
+                
+                <ul class="list-unstyled mb-4 flex-grow-1">
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Acceso a módulos Frontend
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    3 proyectos guiados
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Comunidad de estudiantes
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Certificado de Frontend
+                  </li>
+                  <li class="mb-3 text-white-50">
+                    <i class="bi bi-x-circle-fill me-2"></i>
+                    Mentoría personalizada
+                  </li>
+                  <li class="mb-3 text-white-50">
+                    <i class="bi bi-x-circle-fill me-2"></i>
+                    Acceso de por vida
+                  </li>
+                </ul>
+                
+                <a href="#formulario" class="btn btn-outline-info btn-lg w-100" style="border-color: #00e6e6; color: #00e6e6;">
+                  Comenzar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Profesional (Destacado) -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-lg rounded-4 pricing-card position-relative" style="background: linear-gradient(135deg, #00e6e6 0%, #0072ff 100%); transform: scale(1.05); transition: transform 0.3s ease;">
+              <div class="position-absolute top-0 start-50 translate-middle">
+                <span class="badge bg-warning text-dark px-3 py-2 fs-6">Más Popular</span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="text-center mb-4 mt-3">
+                  <i class="bi bi-star-fill fs-1 mb-3 text-dark"></i>
+                  <h3 class="fw-bold text-dark">Plan Profesional</h3>
+                  <div class="pricing-amount my-3">
+                    <span class="fs-1 fw-bold text-dark">S/ 899</span>
+                    <span class="text-dark opacity-75">/mes</span>
+                  </div>
+                </div>
+                
+                <ul class="list-unstyled mb-4 flex-grow-1">
+                  <li class="mb-3 text-dark">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Acceso Full Stack completo
+                  </li>
+                  <li class="mb-3 text-dark">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    8 proyectos reales
+                  </li>
+                  <li class="mb-3 text-dark">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Mentoría personalizada
+                  </li>
+                  <li class="mb-3 text-dark">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Certificados Frontend & Backend
+                  </li>
+                  <li class="mb-3 text-dark">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Sesiones 1 a 1 mensuales
+                  </li>
+                  <li class="mb-3 text-dark">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Acceso de por vida
+                  </li>
+                </ul>
+                
+                <a href="#formulario" class="btn btn-dark btn-lg w-100">
+                  ¡Inscríbete ahora!
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Premium -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-lg rounded-4 pricing-card" style="background: linear-gradient(135deg, #232526 0%, #0f2027 100%); transition: transform 0.3s ease;">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="text-center mb-4">
+                  <i class="bi bi-rocket-takeoff-fill fs-1 mb-3" style="color: #00e6e6;"></i>
+                  <h3 class="fw-bold" style="color: #00e6e6;">Plan Premium</h3>
+                  <div class="pricing-amount my-3">
+                    <span class="fs-1 fw-bold text-white">S/ 1,299</span>
+                    <span class="text-white-50">/mes</span>
+                  </div>
+                </div>
+                
+                <ul class="list-unstyled mb-4 flex-grow-1">
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Todo del Plan Profesional
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    12+ proyectos avanzados
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Módulo DevOps completo
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Certificación DevOps
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Mentorías ilimitadas
+                  </li>
+                  <li class="mb-3 text-white">
+                    <i class="bi bi-check-circle-fill me-2" style="color: #00e6e6;"></i>
+                    Ayuda en búsqueda laboral
+                  </li>
+                </ul>
+                
+                <a href="#formulario" class="btn btn-info btn-lg w-100" style="background: linear-gradient(90deg, #00e6e6 0%, #0072ff 100%); border: none;">
+                  Impulsa tu carrera
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nota adicional -->
+        <div class="text-center mt-5">
+         
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer>
 
   <footer class="py-4 mt-5" style="background: linear-gradient(90deg, #232526 0%, #414345 100%); color: #fff;">
     <div class="container text-center">

@@ -8,28 +8,26 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    background: linear-gradient(90deg, #232526 0%, #0f2027 100%);
-    color: #fff;
-    overflow-x: hidden;
-}
+
 
 /* =========================
-   EFECTOS HOVER AVANZADOS
+   PRICING CARDS SECTION
    ========================= */
 
-/* Navbar hover effects */
-.navbar-nav .nav-link {
+.pricing-card {
     position: relative;
-    transition: all 0.3s ease;
-    padding: 8px 16px !important;
-    border-radius: 8px;
+    overflow: hidden;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #00e6e6 !important;
-    transform: translateY(-2px);
-    background: rgba(0, 230, 230, 0.1);
+.pricing-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: all 0.6s ease;
 }
 
 .navbar-nav .nav-link::after {
@@ -374,5 +372,194 @@ body{
         opacity: 1;
     }
     
+}
+
+/* =========================
+   PRICING CARDS SECTION
+   ========================= */
+
+.pricing-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: all 0.6s ease;
+}
+
+.pricing-card:hover::after {
+    left: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px) scale(1.03) !important;
+    box-shadow: 0 25px 50px rgba(0, 230, 230, 0.3) !important;
+}
+
+.pricing-card .pricing-amount {
+    position: relative;
+    display: inline-block;
+}
+
+.pricing-card .pricing-amount::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00e6e6, #0072ff);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.pricing-card:hover .pricing-amount::after {
+    width: 100%;
+}
+
+/* Badge animado para el plan más popular */
+.badge.bg-warning {
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+    }
+}
+
+/* Efectos en los iconos de las tarjetas */
+.pricing-card .bi {
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover .bi-code-slash,
+.pricing-card:hover .bi-rocket-takeoff-fill {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.pricing-card:hover .bi-star-fill {
+    animation: rotate-star 1s ease-in-out;
+}
+
+@keyframes rotate-star {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(-15deg) scale(1.1); }
+    50% { transform: rotate(0deg) scale(1.2); }
+    75% { transform: rotate(15deg) scale(1.1); }
+}
+
+/* Responsive adjustments for pricing section */
+@media (max-width: 991px) {
+    .pricing-card.position-relative {
+        transform: scale(1) !important;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* =========================
+   CAROUSEL PRICING MOBILE
+   ========================= */
+
+/* Indicadores del carrusel personalizados */
+#pricingCarousel .carousel-indicators {
+    bottom: -40px;
+}
+
+#pricingCarousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 230, 230, 0.3);
+    border: none;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+#pricingCarousel .carousel-indicators button.active {
+    background-color: #00e6e6;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Controles del carrusel personalizados */
+#pricingCarousel .carousel-control-prev,
+#pricingCarousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 230, 230, 0.2);
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+#pricingCarousel .carousel-control-prev {
+    left: -15px;
+}
+
+#pricingCarousel .carousel-control-next {
+    right: -15px;
+}
+
+#pricingCarousel .carousel-control-prev:hover,
+#pricingCarousel .carousel-control-next:hover {
+    background: rgba(0, 230, 230, 0.4);
+    transform: translateY(-50%) scale(1.1);
+}
+
+#pricingCarousel .carousel-control-prev-icon,
+#pricingCarousel .carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Transiciones suaves del carrusel */
+#pricingCarousel .carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Espaciado del carrusel */
+#pricingCarousel .carousel-inner {
+    padding: 20px 0;
+}
+
+/* Hacer las tarjetas del carrusel más táctiles en móvil */
+@media (max-width: 767px) {
+    #pricingCarousel .pricing-card {
+        transform: none !important;
+    }
     
+    #pricingCarousel .carousel-control-prev,
+    #pricingCarousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #pricingCarousel .carousel-control-prev {
+        left: -10px;
+    }
+    
+    #pricingCarousel .carousel-control-next {
+        right: -10px;
+    }
+
 }
