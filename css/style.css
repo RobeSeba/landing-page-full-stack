@@ -10,8 +10,15 @@ html {
 
 
 
+
+body{
+    background: linear-gradient(90deg, #232526 0%, #0f2027 100%);
+    color: #fff;
+    overflow-x: hidden;
+}
+
 /* =========================
-   PRICING CARDS SECTION
+   EFECTOS HOVER AVANZADOS
    ========================= */
 
 .pricing-card {
